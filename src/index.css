@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-chinese bg-gray-50;
+  }
+  
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-wechat-green hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-wechat-green focus:border-transparent;
+  }
+}
+
+/* 编辑器样式 */
+.monaco-editor {
+  border-radius: 8px;
+}
+
+/* 预览区域样式 */
+.preview-content {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+}
+
+.preview-content h1 {
+  @apply text-2xl font-bold mb-4 text-gray-900;
+}
+
+.preview-content h2 {
+  @apply text-xl font-bold mb-3 text-gray-800;
+}
+
+.preview-content h3 {
+  @apply text-lg font-bold mb-2 text-gray-700;
+}
+
+.preview-content p {
+  @apply mb-4 leading-relaxed;
+}
+
+.preview-content ul, .preview-content ol {
+  @apply mb-4 pl-6;
+}
+
+.preview-content li {
+  @apply mb-1;
+}
+
+.preview-content blockquote {
+  @apply border-l-4 border-wechat-green pl-4 italic text-gray-600 mb-4;
+}
+
+.preview-content code {
+  @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono;
+}
+
+.preview-content pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.preview-content img {
+  @apply max-w-full h-auto rounded-lg mb-4;
+}
