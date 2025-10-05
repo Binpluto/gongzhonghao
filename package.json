@@ -1,6 +1,7 @@
 {
   "name": "wechat-article-publisher",
   "version": "1.0.0",
+  "type": "module",
   "description": "自动排版发送公众号文章的工具",
   "main": "index.js",
   "scripts": {
